@@ -1,0 +1,35 @@
+actions:
+- action_check_flavor
+- action_check_payment
+- action_pizza_flavors
+- utter_ask_help
+- utter_ask_payment
+- utter_bye
+- utter_default
+entities:
+- pagamento
+- sabor
+intents:
+- payment
+- ask_pizza
+- greet
+- sabor_pizza
+- bye
+- stop
+- morning
+- afternoon
+- night
+slots:
+  pagamento:
+    type: text
+  sabor:
+    type: text
+templates:
+  utter_ask_help:
+  - text: Olá, como posso te ajudar?
+  utter_ask_payment:
+  - text: Qual será a forma de pagamento?
+  utter_bye:
+  - text: Tchau, volte sempre!
+  utter_default:
+  - text: Opção não reconhecida!
